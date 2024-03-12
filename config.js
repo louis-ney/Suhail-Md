@@ -37,7 +37,7 @@ global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]
 global.style = process.env.STYLE   || '5',  // put '1' to "5" here to check bot styles
 global.flush = process.env.FLUSH   || "false"; // Make it "true" if bot not responed
 global.gdbye = process.env.GOODBYE || "false"; 
-global.wlcm  = process.env.WELCOME || "true";  // Make it "false" for disable WELCOME 
+global.wlcm  = process.env.WELCOME || "false";  // Make it "false" for disable WELCOME 
 
 global.warncount = process.env.WARN_COUNT || 3,
 global.disablepm = process.env.DISABLE_PM || "false", // disable bot in pm when public mode
@@ -51,7 +51,7 @@ global.waPresence= process.env.WAPRESENCE ||  "set according to your need" ; // 
 //========================= [ AUTO READ MSGS & CMDS ] =========================\\
 global.readcmds = process.env.READ_COMMAND || "false"
 global.readmessage = process.env.READ_MESSAGE || "false"
-global.readmessagefrom = process.env.READ_MESSAGE_FROM || "92318447417,+233551856564";
+global.readmessagefrom = process.env.READ_MESSAGE_FROM || "+233551856564";
 
 
 //========================= [ AUTO SAVE & READ STATUS ] =========================\\
@@ -93,7 +93,7 @@ module.exports = {
   HEROKU: process.env.HEROKU_APP_NAME && process.env.HEROKU_API_KEY,
 
   aitts_Voice_Id : process.env.AITTS_ID || "37",
-  ELEVENLAB_API_KEY: process.env.ELEVENLAB_API_KEY || "",
+  ELEVENLAB_API_KEY: process.env.ELEVENLAB_API_KEY || "5e573c07d7d9061b11b84037a36592c2",
   WORKTYPE: process.env.WORKTYPE||process.env.MODE || "private",
   LANG: process.env.THEME ? process.env.THEME.toUpperCase() : "SUHAIL",
 
